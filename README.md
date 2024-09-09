@@ -28,33 +28,9 @@ Here are your learning objectives for this self-assessment.
 3. Demonstrate learning efficiency by researching concepts you haven't seen before using your peers, mentors, and the World Wide Web as resources.
 4. Awareness of when you need help, and then seeking it out.
 
-## Starter Code
-
-Slim Jenkins has the existing code on Github, so you need to download it from there. Actually, developers call this process _cloning a repository_.
-
-1. In your terminal, to go your workspace directory.
-    ```sh
-    cd ~/workspace
-    ```
-2. Click on the repository link that you got in your Slack message from the Learning Platform.
-3. On that page you will see a green **Code** button. Click on that.
-4. A small popup will appear. Click on the **SSH** text.
-5. Then click on the copy icon you see all the way to the right of the text.
-6. Back in your terminal, you will run the following command, replacing the `{your URL here}` with what you copied.
-    ```sh
-    git clone {your URL here}
-    ```
-7. This will create a new sub-directory called `bug-wrangler-ranch`. Use the `cd` command to navigate into that directory and open it in VS Code.
-    ```sh
-    cd bug-wrangler-ranch
-    code .
-    ```
-
-Open the `main.js` and create your `launch.json` so that you can debug the code starting with `main.js`. Then run the program and start the investigation.
-
 ## Example Output
 
-If you are able to fix all of the bugs, you will output similar to what is below.
+If you are able to fix all of the bugs, you will output similar to what is below. It will not be identical, but similar.
 
 ```sh
 ************************************************
@@ -99,10 +75,6 @@ Your journey will take you through the wildness of the American Midwest and acro
         * mountain
 ```
 
-## Vocabulary and Understanding
-
-> 🧨 Before you click the "Assessment Complete" button on the Learning Platform, add your answers below for each question and make a commit. It is your option to request a face-to-face meeting with a coach for a vocabulary review.
-
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
    > Your answer here
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
@@ -122,7 +94,13 @@ Your journey will take you through the wildness of the American Midwest and acro
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
    > Your answer here
 
+## When You Are Done
 
-## Final Step
+After you have answered all the questions above, you need to push all of your code back up to Github. Follow these instructions.
 
-Now you need to upload your code to Github so a coach can review it and the answers to your vocabulary and understanding questions. Watch the <a href="https://app.screencastify.com/v3/watch/AwPn0FXfji60TxHuUVkU" target="_blank">Sharing assessment repository<a> video for instructions on how to do it.
+1. Be in the `bug-wrangler-ranch` directory.
+2. `git add --all`
+3. `git commit -m "Code complete"`
+4. `git push origin main`
+
+Then go to the Learning Platform and click the **Self-assessment Complete** button.
